@@ -1,0 +1,148 @@
+/* GLOBAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+}
+
+/* HEADER */
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffd166;
+  margin-top: 30px;
+}
+.hero p {
+  margin: 10px 0 30px;
+  font-size: 1.2rem;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+}
+
+/* ICONS INSIDE CARD */
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.icon img, .icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.icon p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* RSVP BUTTON */
+.rsvp {
+  background: #ffd166;
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rsvp:hover {
+  transform: scale(1.1);
+}
+
+/* DEMO SECTION */
+.demo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 250px;
+}
+
+.box h3 {
+  color: #ffd166;
+}
+
+.box svg, .box img {
+  display: block;
+  width: 80px;  
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Make spin smoother and centered */
+.spin {
+  animation: spin 5s linear infinite;
+  transform-origin: center center;
+}
+
+/* BALLOON FLOAT ANIMATION */
+.balloon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* CROWN SPIN */
+.spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+/* CONFETTI FALL */
+.confetti {
+  width: 10px;
+  height: 10px;
+  background: #ff6b6b;
+  margin: 20px auto;
+  border-radius: 50%;
+  animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(100px); opacity: 0; }
+}
+
+/* FOOTER */
+footer {
+  margin: 30px 0;
+  font-size: 0.9rem;
+}
+
